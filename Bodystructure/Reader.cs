@@ -126,6 +126,7 @@ namespace S22.Imap {
 		/// attempted past the end of the underlying string.</exception>
 		public Int64 ReadInteger() {
 			StringBuilder builder = new StringBuilder();
+            builder.Append('0');
 			SkipSpaces();
 			do {
 				char c = (char)Read();
